@@ -26,7 +26,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: npm install
-    - run: npm install -g react-scripts
+    - run: npm install -g react-scripts typescript
     - run: CI=false react-scripts build
     - name: deploy
       uses: peaceiris/actions-gh-pages@v3
